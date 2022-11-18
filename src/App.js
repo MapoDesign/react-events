@@ -21,6 +21,14 @@ function App() {
         <section className="people-list">
           <List data={people} removeItem={removeItem} />
         </section>
+        <button
+          className="button"
+          onClick={() => {
+            reloadAllItem();
+          }}
+        >
+          Reload
+        </button>
       </header>
     </div>
   );
